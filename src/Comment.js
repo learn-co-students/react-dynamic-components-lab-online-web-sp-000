@@ -8,4 +8,5 @@ class Comment extends Component {
   }
 }
 
-export { Comment }
+// export { Comment }
+export default Comment 

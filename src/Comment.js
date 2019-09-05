@@ -1,6 +1,7 @@
 import React from "react";
 
 class Comment extends React.Component {
+
 	render () {
 		return (
 			<div className="comment">
@@ -8,6 +9,7 @@ class Comment extends React.Component {
 			</div>
 		);
 	};
+
 }
 
 export default Comment;

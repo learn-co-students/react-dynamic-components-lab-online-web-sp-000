@@ -1,0 +1,625 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200201.151515.7137.0.001.json",
+    "dumpEventTime": "2020-02-01T15:15:15Z",
+    "dumpEventTimeStamp": "1580598915225",
+    "processId": 7137,
+    "cwd": "/home/learn/code/labs/react-dynamic-components-lab-online-web-sp-000",
+    "commandLine": [
+      "/home/learn/.nvm/versions/node/v13.0.1/bin/node",
+      "/home/learn/code/labs/react-dynamic-components-lab-online-web-sp-000/node_modules/mocha/bin/_mocha",
+      "--timeout",
+      "10000",
+      "--compilers",
+      "js:babel-register",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "spec=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.0.1",
+    "glibcVersionRuntime": "2.23",
+    "glibcVersionCompiler": "2.23",
+    "wordSize": 32,
+    "arch": "ia32",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.0.1",
+      "v8": "7.8.279.17-node.14",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.0.1/node-v13.0.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.0.1/node-v13.0.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-70-generic",
+    "osVersion": "#79~16.04.1-Ubuntu SMP Tue Nov 12 11:54:29 UTC 2019",
+    "osMachine": "i686",
+    "cpus": [
+      {
+        "model": "Intel(R) Celeron(R) CPU N3350 @ 1.10GHz",
+        "speed": 1094,
+        "user": 66690400,
+        "nice": 1469000,
+        "sys": 21475200,
+        "idle": 474281500,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp0s3",
+        "internal": false,
+        "mac": "08:00:27:e3:c3:04",
+        "address": "192.168.1.71",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp0s8",
+        "internal": false,
+        "mac": "08:00:27:bd:b1:f9",
+        "address": "10.0.3.15",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp0s3",
+        "internal": false,
+        "mac": "08:00:27:e3:c3:04",
+        "address": "2001:569:bc41:100:a484:2ee5:918e:b6c0",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp0s3",
+        "internal": false,
+        "mac": "08:00:27:e3:c3:04",
+        "address": "2001:569:bc41:100:383e:3015:5f24:1b56",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp0s3",
+        "internal": false,
+        "mac": "08:00:27:e3:c3:04",
+        "address": "fe80::8da4:2a5c:4816:8f60",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      },
+      {
+        "name": "enp0s8",
+        "internal": false,
+        "mac": "08:00:27:bd:b1:f9",
+        "address": "fe80::b8be:b888:ad95:4971",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "learn-VirtualBox"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0870a9b7",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, v8::Local<v8::String>) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x085dda58",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x087396c8",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08739920",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x088f19d9",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x088f1f43",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x088ff5a5",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x089003d9",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08902f1a",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x088c7e80",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08c07c44",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned int*, v8::internal::Isolate*) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08f490b7",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x3906d9ef",
+      "symbol": ""
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x39069797",
+      "symbol": ""
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x39044a42",
+      "symbol": ""
+    },
+    {
+      "pc": "0x39045e29",
+      "symbol": ""
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed8539",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08f9fb38",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed6732",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08edc22d",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed9eba",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ed9cdb",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08886393",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x0888687c",
+      "symbol": "v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x0874bc67",
+      "symbol": "v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08546bfe",
+      "symbol": "node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x085786ee",
+      "symbol": "node::Environment::CheckImmediate(uv_check_s*) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ec615c",
+      "symbol": " [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08ebea91",
+      "symbol": "uv_run [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x0861b855",
+      "symbol": "node::NodeMainInstance::Run() [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x085aa7ad",
+      "symbol": "node::Start(int, char**) [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0x08543b2a",
+      "symbol": "main [/home/learn/.nvm/versions/node/v13.0.1/bin/node]"
+    },
+    {
+      "pc": "0xb7b60637",
+      "symbol": "__libc_start_main [/lib/i386-linux-gnu/libc.so.6]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 387153920,
+    "totalCommittedMemory": 383095988,
+    "usedMemory": 381086644,
+    "availableMemory": 8607152,
+    "memoryLimit": 390594560,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 22752,
+        "capacity": 22612,
+        "used": 22612,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 5242880,
+        "committedMemory": 1704528,
+        "capacity": 2620040,
+        "used": 489812,
+        "available": 2130228
+      },
+      "old_space": {
+        "memorySize": 367595520,
+        "committedMemory": 367445492,
+        "capacity": 367355324,
+        "used": 366939080,
+        "available": 416244
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 348032,
+        "capacity": 293696,
+        "used": 293696,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 738320,
+        "capacity": 569200,
+        "used": 569200,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 12787712,
+        "committedMemory": 12787712,
+        "capacity": 12770516,
+        "used": 12770516,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 1728,
+        "used": 1728,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2620040,
+        "used": 0,
+        "available": 2620040
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 57.7826,
+    "kernelCpuSeconds": 1.55935,
+    "cpuConsumptionPercent": 91.2953,
+    "maxRss": 432787456,
+    "pageFaults": {
+      "IORequired": 15,
+      "IONotRequired": 124136
+    },
+    "fsActivity": {
+      "reads": 4024,
+      "writes": 568
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 28.8648,
+    "kernelCpuSeconds": 0.833324,
+    "cpuConsumptionPercent": 45.6894,
+    "fsActivity": {
+      "reads": 4024,
+      "writes": 568
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "XDG_VTNR": "7",
+    "SSH_AGENT_PID": "2161",
+    "XDG_SESSION_ID": "c1",
+    "rvm_bin_path": "/home/learn/.rvm/bin",
+    "SAL_USE_VCLPLUGIN": "gtk",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/learn",
+    "GEM_HOME": "/home/learn/.rvm/gems/ruby-2.6.1",
+    "GPG_AGENT_INFO": "/home/learn/.gnupg/S.gpg-agent:0:1",
+    "NVM_CD_FLAGS": "",
+    "HOST": "0.0.0.0",
+    "TERM": "xterm",
+    "SHELL": "/bin/bash",
+    "XDG_MENU_PREFIX": "lxde-",
+    "IRBRC": "/home/learn/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "OLDPWD": "/home/learn/code/labs",
+    "MY_RUBY_HOME": "/home/learn/.rvm/rubies/ruby-2.6.1",
+    "GIT_EDITOR": "code",
+    "SVN_EDITOR": "code",
+    "USER": "learn",
+    "NVM_DIR": "/home/learn/.nvm",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "_system_type": "Linux",
+    "USR_PATHS": "/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "rvm_path": "/home/learn/.rvm",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "SSH_AUTH_SOCK": "/tmp/ssh-42kjTEDnlgdl/agent.1225",
+    "DEFAULTS_PATH": "/usr/share/gconf/Lubuntu.default.path",
+    "XDG_CONFIG_DIRS": "/etc/xdg/lubuntu:/etc/xdg/xdg-Lubuntu:/etc/xdg",
+    "rvm_prefix": "/home/learn",
+    "PATH": "/home/learn/.nvm/versions/node/v13.0.1/bin:/home/learn/.rvm/gems/ruby-2.6.1/bin:/home/learn/.rvm/gems/ruby-2.6.1@global/bin:/home/learn/.rvm/rubies/ruby-2.6.1/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/home/learn/bin:/home/learn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/learn/.rvm/bin:/home/learn/.rvm/bin",
+    "DESKTOP_SESSION": "Lubuntu",
+    "QT_QPA_PLATFORMTHEME": "lxqt",
+    "XDG_SESSION_TYPE": "x11",
+    "PWD": "/home/learn/code/labs/react-dynamic-components-lab-online-web-sp-000",
+    "EDITOR": "code",
+    "LANG": "en_US.UTF-8",
+    "GDM_LANG": "en_US",
+    "MANDATORY_PATH": "/usr/share/gconf/Lubuntu.mandatory.path",
+    "NODE_PATH": "/usr/local/lib/node_modules:",
+    "_system_arch": "i386",
+    "PS1": "\\[\\e]2;\\u@\\h\\a[\\e[37;44;1m\\]\\t\\[\\e[0m\\]]\\[\\033[0;31m\\]$(parse_git_branch) \\[\\e[32m\\]\\W\\[\\e[0m\\]\\n\\[\\e[0;31m\\]\\[\\e[0;49;34m\\]//\\[\\033[0;31m\\] ♥ \\[\\e[0m\\]",
+    "_system_version": "16.04",
+    "GIT_MERGE_AUTOEDIT": "no",
+    "GDMSESSION": "Lubuntu",
+    "_LXSESSION_PID": "1225",
+    "QT_PLATFORM_PLUGIN": "lxqt",
+    "rvm_version": "1.29.3 (latest)",
+    "XDG_SEAT": "seat0",
+    "HOME": "/home/learn",
+    "SHLVL": "1",
+    "XDG_CONFIG_HOME": "/home/learn/.config",
+    "LANGUAGE": "en_US",
+    "XDG_SESSION_DESKTOP": "Lubuntu",
+    "LOGNAME": "learn",
+    "VISUAL": "code",
+    "GEM_PATH": "/home/learn/.rvm/gems/ruby-2.6.1:/home/learn/.rvm/gems/ruby-2.6.1@global",
+    "XDG_DATA_DIRS": "/etc/xdg/lubuntu:/usr/share/gdm:/var/lib/menu-xdg:/usr/share/Lubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-Ekvpbi08wD,guid=d969160fc2a82f9439c7a2275e307e66",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "NVM_BIN": "/home/learn/.nvm/versions/node/v13.0.1/bin",
+    "FLATIRON_VERSION": "1.1.1",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "DISPLAY": ":0.0",
+    "XDG_CURRENT_DESKTOP": "LXDE",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "_system_name": "Ubuntu",
+    "XAUTHORITY": "/home/learn/.Xauthority",
+    "_": "/home/learn/.rvm/gems/ruby-2.6.1/bin/learn",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 11108,
+      "hard": 11108
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/lib/i386-linux-gnu/libdl.so.2",
+    "/usr/lib/i386-linux-gnu/libstdc++.so.6",
+    "/lib/i386-linux-gnu/libm.so.6",
+    "/lib/i386-linux-gnu/libgcc_s.so.1",
+    "/lib/i386-linux-gnu/libpthread.so.0",
+    "/lib/i386-linux-gnu/libc.so.6",
+    "/lib/ld-linux.so.2"
+  ]
+}

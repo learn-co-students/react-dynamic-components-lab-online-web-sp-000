@@ -3,11 +3,16 @@ import React, { Component } from 'react';
 export default class ColorBox extends Component {
 
   render() {
-    return (
-      <div className="color-box" style={{opacity: this.props.opacity /*replace null with the value*/}}>
+    
+      
+      const newValue = (this.props.opacity * 10 - 0.1 * 10) / 10;
+      return this.props.opacity < .2 ? null : (<div className="color-box" style={{opacity: this.props.opacity }}>
 
-      </div>
-    )
+        <ColorBox opacity={newValue} />
+      </div>)
+
+      
+    
   }
 
 }

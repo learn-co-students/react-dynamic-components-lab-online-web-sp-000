@@ -10,4 +10,4 @@ class Comment extends Component {
   }
 }
 
-export default Comment;//your code here
+export default Comment;

@@ -25,3 +25,4 @@ export default class BlogPost extends Component {
     );
   }
 }
+// looks like some boiler plate code here.

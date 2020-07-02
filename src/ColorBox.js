@@ -16,6 +16,8 @@ export default class ColorBox extends Component {
   
 }
 
+//colorbox props.opacity will be sending this out somewhere else.
+
 //// Alternative solution:
 
 // export default class ColorBox extends Component {

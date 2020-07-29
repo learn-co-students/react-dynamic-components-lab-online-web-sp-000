@@ -41,5 +41,20 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "## Learning Goals",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rich0024/react-dynamic-components-lab-online-web-sp-000.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rich0024/react-dynamic-components-lab-online-web-sp-000/issues"
+  },
+  "homepage": "https://github.com/rich0024/react-dynamic-components-lab-online-web-sp-000#readme"
 }

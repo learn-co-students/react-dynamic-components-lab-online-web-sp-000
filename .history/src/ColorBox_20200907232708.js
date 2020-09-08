@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-
+import App from './App'
 
 export default class ColorBox extends Component {
 
+  state = {
+    todos: [
+      
+    ]
+  }
 
   render() {
     if(this.props.opacity >= 0.2) {

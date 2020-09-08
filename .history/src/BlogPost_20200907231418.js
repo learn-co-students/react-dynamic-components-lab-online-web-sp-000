@@ -12,7 +12,7 @@ export default class BlogPost extends Component {
     ]
     
     return (
-      <div id="blog-post" className="wrapper">
+      <div id="blog-post" className="comment">
         Just like moons and like suns,<br/>
         With the certainty of tides,<br/>
         Just like hopes springing high,<br/>
@@ -23,8 +23,8 @@ export default class BlogPost extends Component {
         */}
 
         <Comment commentText={comments[0]} />
-        <Comment commentText={comments[1]} />
-        <Comment commentText={comments[2]} />
+        <Comment commentText={comments[0]} />
+        <Comment commentText={comments[0]} />
       </div>
     );
   }

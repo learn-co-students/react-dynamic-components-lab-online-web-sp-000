@@ -12,7 +12,7 @@ export default class BlogPost extends Component {
     ]
     
     return (
-      <div id="blog-post" className="wrapper">
+      <div id="blog-post" className="comment">
         Just like moons and like suns,<br/>
         With the certainty of tides,<br/>
         Just like hopes springing high,<br/>

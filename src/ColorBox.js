@@ -14,16 +14,9 @@ export default class ColorBox extends Component {
 
   render() {
 
-    //let opacity = this.props.opacity
-    // if (opacity >= 0.2) {
-    //   opacity = this.props.opacity - 0.1
-    //   console.log(this.props.opacity)
-
-    // }
-    debugger
     const newOpacity = this.props.opacity - 0.1
     if (this.props.opacity >= 0.2) {
-      debugger
+      //debugger
       console.log(newOpacity);
       return (
       

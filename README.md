@@ -74,7 +74,7 @@ created and exported)
 - Should expect a single prop (an opacity value), which can be used in the
   component via: `this.props.opacity`. This prop is first passed in `src/App.js`
 - If the opacity value _is greater than or equal to 0.2_:
-  - the `ColorBox` component should render another `ColorBox` inside itself 
+  - the `ColorBox` component should render another `ColorBox` inside itself
     (recursive components!)
   - an opacity prop should be passed to the child
   - the passed opacity prop should be reduced by 0.1
@@ -97,14 +97,16 @@ created and exported)
   the evaluation of a ternary operator. If the expression `this.props.value > 100` evaluates to be true, the entire ternary expression (and thus, the return value of `render()`) evaluates to be null, otherwise, `render()` will return some JSX.
 
 ```js
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class Example extends Component {
   render() {
     const newValue = this.props.value * 2;
-    return this.props.value > 100 ? null : ( <div>
+    return this.props.value > 100 ? null : (
+      <div>
         <Example value={newValue} />
-      </div>)
+      </div>
+    );
   }
 }
 ```

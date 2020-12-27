@@ -36,7 +36,7 @@ describe('BlogPost', () => {
 })
 
 describe('Comment', () => {
-  let comment
+  let comment 
   
   before(() => {
     comment = shallow(<Comment commentText={"poop"}/>)

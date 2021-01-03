@@ -44,6 +44,7 @@ Go ahead and `npm start` to see what we already have rendering in the browser.
 
 ## Deliverables
 
+
 (The application will error on `npm start` until the `Comment` component is
 created and exported)
 
@@ -74,7 +75,7 @@ created and exported)
 - Should expect a single prop (an opacity value), which can be used in the
   component via: `this.props.opacity`. This prop is first passed in `src/App.js`
 - If the opacity value _is greater than or equal to 0.2_:
-  - the `ColorBox` component should render another `ColorBox` inside itself 
+  - the `ColorBox` component should render another `ColorBox` inside itself
     (recursive components!)
   - an opacity prop should be passed to the child
   - the passed opacity prop should be reduced by 0.1

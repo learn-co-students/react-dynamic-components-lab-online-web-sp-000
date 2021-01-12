@@ -1,15 +1,11 @@
 
 import React, { Component } from 'react'
-import BlogPost from './BlogPost'
 
-export default class Comment extends 
-    React.Component {
+export default class Comment extends Component {
         render() {
             return (
-                <div>
-                    <BlogPost className= {
-                        "comment"
-                    }/>
+                <div className="comment">
+                    {this.props.commentText}
                 </div>
             )
         }

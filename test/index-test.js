@@ -1,4 +1,4 @@
-require('jsdom-global')()
+import 'jsdom-global/register';
 import { expect } from 'chai'
 import React from 'react'
 import ReactDOM from 'react-dom'

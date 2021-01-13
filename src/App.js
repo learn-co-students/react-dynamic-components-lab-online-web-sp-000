@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import BlogPost from './BlogPost.js'
 import ColorBox from './ColorBox.js'
 
-class App extends Component {
+class App extends React.Component {
   
   // Nothing needs to change here! 
   // Make note of what prop we are initially passing to `ColorBox` below!

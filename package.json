@@ -14,14 +14,13 @@
     "mocha-multi": "^1.1.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^2.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha --timeout 5000 -w test/helpers.js test/*.js",
-    "eject": "react-scripts eject",
-    "type": "module"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -34,7 +33,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
-    "mocha": "^8.3.2",
+    "mocha": "^5.2.0",
     "sinon": "^6.3.5"
   },
   "browserslist": [
